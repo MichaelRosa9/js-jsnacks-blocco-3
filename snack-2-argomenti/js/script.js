@@ -12,7 +12,7 @@ function newArray(arr, num1, num2){
   var arrayReturn = [];
   if(num1 < num2 && num2<= arr.length){
     for(i = num1; i <= num2; i++){
-      arrayReturn.push(i);
+      arrayReturn.push(arr[i]);
     }
   }
   
