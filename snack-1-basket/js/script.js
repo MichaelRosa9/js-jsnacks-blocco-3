@@ -21,7 +21,6 @@ $(function(){
     console.log(basket_player);
   }
   
-  console.log(team);
 });
 
 //funzione che mi calcola la percentuale
