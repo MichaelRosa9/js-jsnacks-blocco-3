@@ -2,23 +2,28 @@
 //definisco l'array di gicatori
 var team= [];
 
-//definisco l'arrai di un sigolo giocatore
-var basket_player = {
-  playerName:'',
-  ponints:'',
-  threpointer_stats:''
-}
 
 $(function(){
-  
+  //faqccio un ciclo
   while(team.length < 5){
-    var letters = randomLetter(3);
-    basket_player.playerName = letters + randomNumberGenerator(100, 999);
-    basket_player.ponints = randomNumberGenerator(0,50);
-    basket_player.threpointer_stats = percentage(randomNumberGenerator(0,100), randomNumberGenerator(0,100));
-    team.push(basket_player);
     
-    console.log(basket_player);
+    //definisco l'oggett di un sigolo giocatore dentro al ciclo
+    var basket_player = {
+      playerName:'',
+      ponints:'',
+      threpointer_stats:''
+    }
+    //definisco la funzione in una variabile le lettere da dare al giocatore
+    var letters = randomLetter(3);
+
+    //definisco il valore della proprieta dell'oggetto
+    basket_player.playerName = letters + randomNumberGenerator(100, 999);
+    //definisco il valore della proprieta dell'oggetto
+    basket_player.ponints = randomNumberGenerator(0,50);
+    //definisco il valore della proprieta dell'oggetto
+    basket_player.threpointer_stats = percentage(randomNumberGenerator(0,100), randomNumberGenerator(0,100));
+    //pusho l'oggetto con i valorei assergnati alle proprieta
+    team.push(basket_player);
   }
   
 });
