@@ -4,14 +4,14 @@ arrayNumbers = [];
 for(i = 1; i<=100; i++){
   arrayNumbers.push(i);
 }
-console.log(funct(arrayNumbers, 10, 80));
+console.log(newArray(arrayNumbers, 10, 80));
 
 
 
-function funct(arr, num1, num2){
+function newArray(arr, num1, num2){
   var arrayReturn = [];
   if(num1 < num2 && num2<= arr.length){
-    for(i = num1; i < arr.length; i++){
+    for(i = num1; i <= num2; i++){
       arrayReturn.push(i);
     }
   }
